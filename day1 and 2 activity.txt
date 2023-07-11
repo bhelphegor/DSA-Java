@@ -1,0 +1,98 @@
+1)Write a program to accept a number N and print wheather it is positive,negative or zero 
+
+//program to print odd/even/zero
+
+import java.util.Scanner ;
+
+public class solution{
+    
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int n=sc.nextInt();
+        if(n%2==0){
+            System.out.println("the number is even");
+        }else if(n==0){
+            System.out.println("the number you entered is zero");
+            
+        }else{
+            System.out.println("the number is odd");
+        }
+       
+    }
+}
+
+
+2)write a program to accept two numbers and print the greater value of the two
+
+//find the greatest
+import java.util.Scanner;
+
+public class solution{
+    
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two  number:");
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        if(n1>n2){
+            System.out.println(n1+" is greater then "+n2);
+        }else{
+            System.out.println(n2+" is greater then "+n1);
+        }
+    }
+}
+
+
+3)find wheather the sum of two numbers is odd or even
+
+//find wheather sum of two numbers is odd or even
+import java.util.Scanner;
+
+public class solution{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter two numbers");
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        int sum=n1+n2;
+        if(sum%2==0){
+            System.out.println("the sum is even");
+        }else{
+            System.out.println("the sum is odd");
+        }
+    }
+}
+
+
+4)write a progam to print numbers from 1 to 100(including 1 and 100)
+
+//to print numbers from 1 to 100
+
+import java.util.Scanner;
+
+public class solution{
+    public static void main(String[] args){
+    int i=1;
+    int n=100;
+    for(i=1;i<=n;i++){
+        System.out.print(i+" ");
+    }
+}
+}
+
+5)Write a program to print all numbers backwards from 100 to 1 by skipping two numbers
+
+//Write a program to print all numbers backwards from 100 to 1 by skipping two numbers
+import java.util.Scanner;
+
+public class solution{
+    public static void main(String[] args){
+    int i=100;
+    int n=1;
+    while(i<=n){
+        System.out.print(i+"\t");
+        i-=2;
+    }
+    }
+}
